@@ -15,7 +15,6 @@ if [ $UID -eq 0 ]; then NCOLOR="green"; else NCOLOR="white"; fi
 
 # prompt
 hn=$(hostname)
-hn="lol"
 hnd=$hn[1,4]
 PROMPT='[%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}@$hnd:%{$fg[blue]%}%30<...<%~%<<%{$reset_color%}]%{$fg[yellow]%}%(!.#.$)%{$reset_color%} '
 RPROMPT='$(git_prompt_info)'
